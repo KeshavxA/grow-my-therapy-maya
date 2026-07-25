@@ -10,21 +10,22 @@ import BlogPreview from "@/components/BlogPreview";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--bg-cream)]">
       <Navbar />
-      <Hero />
-      <Intro />
-      <ServicesGrid />
-      <Office />
-      <Approach />
-      <About />
-      <Testimonials />
-      <BlogPreview />
-      <FAQ />
-      <Contact />
+      <ScrollReveal><Hero /></ScrollReveal>
+      <ScrollReveal><Intro /></ScrollReveal>
+      <ScrollReveal><ServicesGrid /></ScrollReveal>
+      <ScrollReveal><Office /></ScrollReveal>
+      <ScrollReveal><Approach /></ScrollReveal>
+      <ScrollReveal><About /></ScrollReveal>
+      <ScrollReveal><Testimonials /></ScrollReveal>
+      <ScrollReveal><BlogPreview /></ScrollReveal>
+      <ScrollReveal><FAQ /></ScrollReveal>
+      <ScrollReveal><Contact /></ScrollReveal>
       <Footer />
     </main>
   );
