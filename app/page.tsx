@@ -6,6 +6,7 @@ import ServicesGrid from "@/components/ServicesGrid";
 import Approach from "@/components/Approach";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
+import BlogPreview from "@/components/BlogPreview";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
       <Approach />
       <About />
       <Testimonials />
+      <BlogPreview />
       <FAQ />
       <Contact />
       <Footer />
