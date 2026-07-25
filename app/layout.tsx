@@ -17,8 +17,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Maya Reynolds | Holistic Therapy in Seattle",
-  description: "Holistic therapy and trauma recovery in Seattle, WA.",
+  title: {
+    default: "Dr. Maya Reynolds | Holistic Therapy & Trauma Recovery",
+    template: "%s | Dr. Maya Reynolds"
+  },
+  description: "Specializing in holistic, body-centered therapy and EMDR for trauma recovery, anxiety, and relationship issues in Seattle, WA and online.",
+  keywords: ["holistic therapy", "trauma recovery", "EMDR", "Seattle therapist", "anxiety counseling", "couples therapy"],
+  authors: [{ name: "Dr. Maya Reynolds" }],
+  creator: "Dr. Maya Reynolds",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://drmayareynolds.com",
+    title: "Dr. Maya Reynolds | Holistic Therapy & Trauma Recovery",
+    description: "Specializing in holistic, body-centered therapy and EMDR for trauma recovery, anxiety, and relationship issues.",
+    siteName: "Dr. Maya Reynolds Therapy"
+  }
 };
 
 export default function RootLayout({
