@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import FloatingContact from "@/components/FloatingContact";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased font-sans`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <FloatingContact />
+        </Providers>
       </body>
     </html>
   );
