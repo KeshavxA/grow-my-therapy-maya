@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="w-full py-4 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-[var(--color-sage)]/20">
+        <nav className="w-full py-4 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center bg-white/80 dark:bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-[var(--color-sage)]/20">
             <div className="flex justify-between items-center w-full md:w-auto">
                 <Link href="/" className="text-2xl md:text-3xl font-medium tracking-tight text-[var(--text-main)] font-serif">
                     Dr. Maya Reynolds
@@ -33,7 +34,8 @@ export default function Navbar() {
                 <Link href="#blog" className="hover:opacity-70 transition-opacity" onClick={() => setIsOpen(false)}>Blog</Link>
             </div>
 
-            <div className={`${isOpen ? "block" : "hidden"} md:block mb-4 md:mb-0`}>
+            <div className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0`}>
+                <ThemeToggle />
                 <Link href="#contact" className="px-6 py-2 border border-[var(--color-sage)] rounded-full text-xs font-bold uppercase tracking-widest text-[var(--color-sage)] hover:bg-[var(--color-sage)] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
                     Book Consultation
                 </Link>

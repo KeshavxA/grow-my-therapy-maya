@@ -3,22 +3,28 @@
 @tailwind utilities;
 
 :root {
-
   --bg-cream: #FAF9F6;
   --text-green: #2F3E2E;
   --color-sage: #2F3E2E;
-
   --color-sand: #FAF9F6;
-
   --color-charcoal: #2F3E2E;
-
 
   --text-main: var(--text-green);
   --bg-soft: var(--bg-cream);
 
-
   --font-serif: var(--font-playfair), serif;
   --font-sans: var(--font-inter), sans-serif;
+}
+
+[data-theme='dark'] {
+  --bg-cream: #1A1A1A;
+  --text-green: #E5E0D5;
+  --color-sage: #8DA399;
+  --color-sand: #242424;
+  --color-charcoal: #E5E0D5;
+
+  --text-main: var(--text-green);
+  --bg-soft: var(--bg-cream);
 }
 
 body {
