@@ -9,6 +9,7 @@ import Approach from "@/components/Approach";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
+import ResourcesGrid from "@/components/ResourcesGrid";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -28,6 +29,7 @@ export default function Home() {
       <ScrollReveal><About /></ScrollReveal>
       <ScrollReveal><Testimonials /></ScrollReveal>
       <ScrollReveal><BlogPreview /></ScrollReveal>
+      <ScrollReveal><ResourcesGrid /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
       <ScrollReveal><Contact /></ScrollReveal>
       <Footer />
