@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import CrisisBanner from "@/components/CrisisBanner";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import BreathingWidget from "@/components/BreathingWidget";
@@ -16,6 +17,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--bg-cream)]">
+      <CrisisBanner />
       <Navbar />
       <ScrollReveal><Hero /></ScrollReveal>
       <ScrollReveal><Intro /></ScrollReveal>
