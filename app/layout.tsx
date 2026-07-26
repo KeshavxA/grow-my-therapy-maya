@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import FloatingContact from "@/components/FloatingContact";
 import ScrollToTop from "@/components/ScrollToTop";
+import A11yScaler from "@/components/A11yScaler";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -50,6 +51,7 @@ export default function RootLayout({
           {children}
           <FloatingContact />
           <ScrollToTop />
+          <A11yScaler />
         </Providers>
       </body>
     </html>
