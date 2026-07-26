@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import FloatingContact from "@/components/FloatingContact";
 import ScrollToTop from "@/components/ScrollToTop";
 import A11yScaler from "@/components/A11yScaler";
+import JsonLdSchema from "@/components/JsonLdSchema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased font-sans`}
       >
+        <JsonLdSchema />
         <Providers>
           {children}
           <FloatingContact />
