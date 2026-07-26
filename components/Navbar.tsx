@@ -34,9 +34,17 @@ export default function Navbar() {
                 <Link href="#blog" className="hover:opacity-70 transition-opacity" onClick={() => setIsOpen(false)}>Blog</Link>
             </div>
 
-            <div className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0`}>
+            <div className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center gap-3 mb-4 md:mb-0`}>
                 <ThemeToggle />
-                <Link href="#contact" className="px-6 py-2 border border-[var(--color-sage)] rounded-full text-xs font-bold uppercase tracking-widest text-[var(--color-sage)] hover:bg-[var(--color-sage)] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
+                <a 
+                    href="https://simplepractice.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-[var(--color-sage)]/15 text-[var(--text-main)] hover:bg-[var(--color-sage)]/25 transition-colors flex items-center gap-1.5"
+                >
+                    <span>🔒 Portal</span>
+                </a>
+                <Link href="#contact" className="px-5 py-2 border border-[var(--color-sage)] rounded-full text-xs font-bold uppercase tracking-widest text-[var(--color-sage)] hover:bg-[var(--color-sage)] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
                     Book Consultation
                 </Link>
             </div>
