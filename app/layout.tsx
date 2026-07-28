@@ -6,6 +6,7 @@ import FloatingContact from "@/components/FloatingContact";
 import ScrollToTop from "@/components/ScrollToTop";
 import A11yScaler from "@/components/A11yScaler";
 import JsonLdSchema from "@/components/JsonLdSchema";
+import SoundscapePlayer from "@/components/SoundscapePlayer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -54,6 +55,7 @@ export default function RootLayout({
           <FloatingContact />
           <ScrollToTop />
           <A11yScaler />
+          <SoundscapePlayer />
         </Providers>
       </body>
     </html>
