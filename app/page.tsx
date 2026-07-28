@@ -7,6 +7,7 @@ import BreathingWidget from "@/components/BreathingWidget";
 import Office from "@/components/Office";
 import ServicesGrid from "@/components/ServicesGrid";
 import Approach from "@/components/Approach";
+import ReadinessQuiz from "@/components/ReadinessQuiz";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
@@ -29,6 +30,7 @@ export default function Home() {
       <ScrollReveal><ServicesGrid /></ScrollReveal>
       <ScrollReveal><Office /></ScrollReveal>
       <ScrollReveal><Approach /></ScrollReveal>
+      <ScrollReveal><ReadinessQuiz /></ScrollReveal>
       <ScrollReveal><About /></ScrollReveal>
       <ScrollReveal><Testimonials /></ScrollReveal>
       <ScrollReveal><BlogPreview /></ScrollReveal>
