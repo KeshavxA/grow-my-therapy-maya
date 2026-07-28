@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import CrisisBanner from "@/components/CrisisBanner";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
+import MoodCheckIn from "@/components/MoodCheckIn";
 import BreathingWidget from "@/components/BreathingWidget";
 import Office from "@/components/Office";
 import ServicesGrid from "@/components/ServicesGrid";
@@ -22,6 +23,7 @@ export default function Home() {
       <Navbar />
       <ScrollReveal><Hero /></ScrollReveal>
       <ScrollReveal><Intro /></ScrollReveal>
+      <ScrollReveal><MoodCheckIn /></ScrollReveal>
       <ScrollReveal><BreathingWidget /></ScrollReveal>
       <ScrollReveal><ServicesGrid /></ScrollReveal>
       <ScrollReveal><Office /></ScrollReveal>
