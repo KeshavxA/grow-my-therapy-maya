@@ -5,6 +5,7 @@ import Intro from "@/components/Intro";
 import MoodCheckIn from "@/components/MoodCheckIn";
 import BreathingWidget from "@/components/BreathingWidget";
 import Office from "@/components/Office";
+import TelehealthAssessment from "@/components/TelehealthAssessment";
 import ServicesGrid from "@/components/ServicesGrid";
 import Approach from "@/components/Approach";
 import JourneyTimeline from "@/components/JourneyTimeline";
@@ -32,6 +33,7 @@ export default function Home() {
       <ScrollReveal><BreathingWidget /></ScrollReveal>
       <ScrollReveal><ServicesGrid /></ScrollReveal>
       <ScrollReveal><Office /></ScrollReveal>
+      <ScrollReveal><TelehealthAssessment /></ScrollReveal>
       <ScrollReveal><Approach /></ScrollReveal>
       <ScrollReveal><JourneyTimeline /></ScrollReveal>
       <ScrollReveal><ReadinessQuiz /></ScrollReveal>
