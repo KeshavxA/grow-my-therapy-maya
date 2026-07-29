@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import FloatingContact from "@/components/FloatingContact";
 import ScrollToTop from "@/components/ScrollToTop";
+import GroundingStone from "@/components/GroundingStone";
 import A11yScaler from "@/components/A11yScaler";
 import JsonLdSchema from "@/components/JsonLdSchema";
 import SoundscapePlayer from "@/components/SoundscapePlayer";
@@ -54,6 +55,7 @@ export default function RootLayout({
           {children}
           <FloatingContact />
           <ScrollToTop />
+          <GroundingStone />
           <A11yScaler />
           <SoundscapePlayer />
         </Providers>
