@@ -14,6 +14,7 @@ import BlogPreview from "@/components/BlogPreview";
 import ResourcesGrid from "@/components/ResourcesGrid";
 import FeeEstimator from "@/components/FeeEstimator";
 import FAQ from "@/components/FAQ";
+import SessionPrepChecklist from "@/components/SessionPrepChecklist";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -37,6 +38,7 @@ export default function Home() {
       <ScrollReveal><ResourcesGrid /></ScrollReveal>
       <ScrollReveal><FeeEstimator /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
+      <ScrollReveal><SessionPrepChecklist /></ScrollReveal>
       <ScrollReveal><Contact /></ScrollReveal>
       <Footer />
     </main>
