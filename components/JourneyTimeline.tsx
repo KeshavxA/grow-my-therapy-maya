@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import GlossaryTooltip from "./GlossaryTooltip";
 
 interface TimelinePhase {
     id: string;
     phase: string;
     title: string;
-    summary: string;
-    details: string[];
+    summary: React.ReactNode;
+    details: React.ReactNode[];
 }
 
 export default function JourneyTimeline() {
@@ -18,11 +19,11 @@ export default function JourneyTimeline() {
             id: "phase-1",
             phase: "Phase 1",
             title: "Intake & Safety Building",
-            summary: "Establishing trust, exploring your history, and learning nervous system regulation tools.",
+            summary: <span className="inline">Establishing trust, exploring your history, and learning <GlossaryTooltip term="Nervous System Regulation" definition="The ability to consciously shift your body out of 'fight or flight' into a state of calm and safety.">nervous system regulation</GlossaryTooltip> tools.</span>,
             details: [
                 "Collaborative intake assessment to understand your goals.",
                 "Mapping your nervous system's unique stress responses.",
-                "Learning grounding techniques (like box breathing or somatics) to ensure you always feel safe."
+                <span className="inline" key="det-1">Learning grounding techniques (like box breathing or <GlossaryTooltip term="Somatics" definition="A therapeutic approach that prioritizes the internal physical perception and experience of the body.">somatics</GlossaryTooltip>) to ensure you always feel safe.</span>
             ]
         },
         {
@@ -31,7 +32,7 @@ export default function JourneyTimeline() {
             title: "Core Processing & Exploration",
             summary: "The deep work of untangling limiting beliefs, processing trauma, and reshaping relational patterns.",
             details: [
-                "Using EMDR or IFS to gently approach difficult memories without re-traumatization.",
+                <span className="inline" key="det-2">Using <GlossaryTooltip term="EMDR" definition="Eye Movement Desensitization and Reprocessing: A therapy that helps the brain reprocess traumatic memories so they no longer cause intense emotional distress.">EMDR</GlossaryTooltip> or <GlossaryTooltip term="IFS" definition="Internal Family Systems: A model that helps you understand and heal different 'parts' of your personality, like the inner critic or the wounded child.">IFS</GlossaryTooltip> to gently approach difficult memories without re-traumatization.</span>,
                 "Identifying and reshaping protective but outdated behavioral patterns.",
                 "Practicing new boundary-setting and communication skills in a safe environment."
             ]
@@ -40,7 +41,7 @@ export default function JourneyTimeline() {
             id: "phase-3",
             phase: "Phase 3",
             title: "Integration & Maintenance",
-            summary: "Solidifying new neural pathways, celebrating growth, and transitioning to long-term wellness.",
+            summary: <span className="inline">Solidifying new <GlossaryTooltip term="Neural Pathways" definition="Connections in the brain that form our habits and emotional responses. Therapy helps build new, healthier pathways.">neural pathways</GlossaryTooltip>, celebrating growth, and transitioning to long-term wellness.</span>,
             details: [
                 "Testing new coping strategies in real-world scenarios.",
                 "Spacing out sessions (e.g., bi-weekly to monthly) to practice independence.",

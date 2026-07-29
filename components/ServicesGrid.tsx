@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import GlossaryTooltip from "./GlossaryTooltip";
 
 interface ServiceInfo {
     title: string;
@@ -8,9 +9,9 @@ interface ServiceInfo {
     bullets: string[];
     duration: string;
     pacingBadge: string;
-    pacingTip: string;
+    pacingTip: React.ReactNode;
     modality: string;
-    detailedDescription: string;
+    detailedDescription: React.ReactNode;
     icon: React.ReactNode;
 }
 
@@ -51,9 +52,9 @@ export default function ServicesGrid() {
             bullets: ["Work-Life Balance", "Nervous System Rest", "EMDR Trauma Reprocessing"],
             duration: "50-min standard / 80-min intensive options",
             pacingBadge: "🧠 80m Deep Processing",
-            pacingTip: "Trauma and somatic reprocessing require slow, deliberate pacing to prevent nervous system flooding and allow thorough grounding before leaving the room.",
+            pacingTip: <span className="inline">Trauma and somatic reprocessing require slow, deliberate pacing to prevent <GlossaryTooltip term="Nervous System Flooding" definition="When the nervous system becomes so overwhelmed by stimuli or memory that it cannot process information, leading to panic, dissociation, or shutdown.">nervous system flooding</GlossaryTooltip> and allow thorough grounding before leaving the room.</span>,
             modality: "Somatic Experiencing (SE) & EMDR Protocol",
-            detailedDescription: "Burnout isn't just cognitive exhaustion—it lives deeply in the body as tension and emotional fatigue. We will assess your professional and personal loads, re-tune your nervous system out of fight-or-flight, and redesign sustainable patterns that preserve your energy and passionate purpose.",
+            detailedDescription: <span className="inline">Burnout isn't just cognitive exhaustion—it lives deeply in the body as tension and emotional fatigue. We will assess your professional and personal loads, re-tune your nervous system out of <GlossaryTooltip term="Fight-or-Flight" definition="An automatic physiological reaction to an event that is perceived as stressful or frightening.">fight-or-flight</GlossaryTooltip>, and redesign sustainable patterns that preserve your energy and passionate purpose.</span>,
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             )
