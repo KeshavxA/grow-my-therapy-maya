@@ -12,6 +12,7 @@ import ReadinessQuiz from "@/components/ReadinessQuiz";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
+import PMRWidget from "@/components/PMRWidget";
 import ResourcesGrid from "@/components/ResourcesGrid";
 import FeeEstimator from "@/components/FeeEstimator";
 import FAQ from "@/components/FAQ";
@@ -37,6 +38,13 @@ export default function Home() {
       <ScrollReveal><About /></ScrollReveal>
       <ScrollReveal><Testimonials /></ScrollReveal>
       <ScrollReveal><BlogPreview /></ScrollReveal>
+      <ScrollReveal>
+        <section className="w-full py-12 px-6 md:px-16 bg-[var(--bg-cream)]">
+          <div className="container mx-auto max-w-3xl">
+            <PMRWidget />
+          </div>
+        </section>
+      </ScrollReveal>
       <ScrollReveal><ResourcesGrid /></ScrollReveal>
       <ScrollReveal><FeeEstimator /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
